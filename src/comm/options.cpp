@@ -125,6 +125,7 @@ Options :: Options()
     bUseCheckpointReplayer = false;
     bUseBatchPropose = false;
     bOpenChangeValueBeforePropose = false;
+    Svr = nullptr;
 }
     
 }

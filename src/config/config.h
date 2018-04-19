@@ -92,6 +92,9 @@ public:
 
     InsideSM * GetMasterSM();
 
+    void SetSvrptr(void *_svr){Svr = _svr;}
+    void *GetSvrptr() { return Svr;}
+
 public:
     void AddTmpNodeOnlyForLearn(const nodeid_t iTmpNodeID);
 
@@ -125,6 +128,8 @@ private:
 
     std::map<nodeid_t, uint64_t> m_mapTmpNodeOnlyForLearn;
     std::map<nodeid_t, uint64_t> m_mapMyFollower;
+
+    void *Svr;
 };
 
 }

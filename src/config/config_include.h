@@ -21,6 +21,6 @@ See the AUTHORS file for names of contributors.
 
 #pragma once
 
-#include "./config.h"
-#include "./system_v_sm.h"
-#include "./inside_sm.h"
+#include "config.h"
+#include "system_v_sm.h"
+#include "inside_sm.h"

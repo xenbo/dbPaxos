@@ -609,8 +609,7 @@ void Learner :: OnProposerSendSuccess(const PaxosMsg & oPaxosMsg)
 
     BallotNumber oBallot(oPaxosMsg.proposalid(), oPaxosMsg.nodeid());
 
-    if (m_poAcceptor->GetAcceptorState()->GetAcceptedBallot()
-            != oBallot)
+    if (m_poAcceptor->GetAcceptorState()->GetAcceptedBallot() != oBallot)
     {
         //Proposalid not same, this accept value maybe not chosen value.
         PLGDebug("ProposalBallot not same to AcceptedBallot");

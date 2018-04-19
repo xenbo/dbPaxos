@@ -59,7 +59,7 @@ Config :: Config(
         {
             PLG1Head("I'm follower, ip %s port %d nodeid %lu",
                     oMyNode.GetIP().c_str(), oMyNode.GetPort(), oMyNode.GetNodeID());
-            m_bIsIMFollower = true;
+            m_bIsIMFollower = true;//m_bIsIMFollower
             m_iFollowToNodeID = oFollowerNodeInfo.oFollowNode.GetNodeID();
 
             InsideOptions::Instance()->SetAsFollower();

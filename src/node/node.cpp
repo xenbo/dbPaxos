@@ -56,8 +56,6 @@ int Node :: RunNode(const Options & oOptions, Node *& poNode)
     //start recieve message from network, so all must init before this step.
     //must be the last step.
     poNetWork->RunNetWork();
-
-
     poNode = poRealNode;
 
     return 0;

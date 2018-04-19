@@ -1,24 +1,76 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.8)
 project(paxos)
 
 set(CMAKE_CXX_STANDARD 11)
 
-include_directories(src/algorithm src/checkpoint src/comm src/communicate src/config src/logstorage src/master src/node src/sm-base src/tools src/utils src/ut src/test include)
+
+include_directories(include)
+include_directories(include/phxpaxos)
+include_directories(src/algorithm)
+include_directories(src/config)
+include_directories(src/node)
+include_directories(src/utils)
+include_directories(src/logstorage)
+include_directories(src/comm)
+include_directories(src/sm-base)
+include_directories(src/tools)
+include_directories(src/checkpoint)
+#include_directories(src/ut)
+include_directories(src/communicate)
+include_directories(src/communicate/tcp)
+include_directories(src/master)
 
 
-AUX_SOURCE_DIRECTORY(src/algorithm  DIR_SRCS1)
-AUX_SOURCE_DIRECTORY(src/node  DIR_SRCS2)
-AUX_SOURCE_DIRECTORY(src/checkpoint  DIR_SRCS3)
-AUX_SOURCE_DIRECTORY(src/comm  DIR_SRCS4)
-AUX_SOURCE_DIRECTORY(src/communicate  DIR_SRCS5)
-AUX_SOURCE_DIRECTORY(src/config  DIR_SRCS6)
-AUX_SOURCE_DIRECTORY(src/logstorage  DIR_SRCS7)
-AUX_SOURCE_DIRECTORY(src/sm-base  DIR_SRCS8)
-AUX_SOURCE_DIRECTORY(src/master  DIR_SRCS9)
-AUX_SOURCE_DIRECTORY(src/tools  DIR_SRCS10)
-AUX_SOURCE_DIRECTORY(src/ut  DIR_SRCS11)
-AUX_SOURCE_DIRECTORY(src/utils  DIR_SRCS12)
-AUX_SOURCE_DIRECTORY(src/test  DIR_SRCS13)
+include_directories(src/test)
+link_directories(/usr/local/lib64/)
 
-set(SOURCE_FILES main.cpp ${DIR_SRCS1} ${DIR_SRCS2} ${DIR_SRCS3} ${DIR_SRCS4} ${DIR_SRCS5} ${DIR_SRCS6} ${DIR_SRCS7} ${DIR_SRCS8} ${DIR_SRCS9} ${DIR_SRCS10} ${DIR_SRCS11} ${DIR_SRCS3} ${DIR_SRCS12})
-add_executable(paxos ${SOURCE_FILES})
+
+
+AUX_SOURCE_DIRECTORY(src/algorithm SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/config SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/node SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/utils SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/logstorage SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/comm SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/sm-base SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/tools SRC)
+set(SOURCE_FILES ${SRC})
+
+#AUX_SOURCE_DIRECTORY(src/ut SRC)
+#set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/checkpoint SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/communicate SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/communicate/tcp SRC)
+set(SOURCE_FILES ${SRC})
+
+AUX_SOURCE_DIRECTORY(src/master SRC)
+set(SOURCE_FILES ${SRC})
+
+
+
+add_library(dbphxpaxos STATIC ${SOURCE_FILES})
+
+AUX_SOURCE_DIRECTORY(src/test SRCTEST)
+set(SOURCE_FILESTEST ${SRCTEST})
+
+add_executable(paxos ${SOURCE_FILESTEST})
+target_link_libraries(paxos dbphxpaxos leveldb protobuf pthread)

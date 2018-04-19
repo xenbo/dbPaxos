@@ -38,6 +38,7 @@ public:
 
     int m_iSMID;
     void * m_pCtx;
+    void * Svr;
 };
 
 //////////////////////////////////////////////

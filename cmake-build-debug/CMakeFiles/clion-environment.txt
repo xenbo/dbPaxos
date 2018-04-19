@@ -1,2 +1,0 @@
-Options: 
-CMake: 3.9.0@/bin/cmake

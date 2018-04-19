@@ -29,7 +29,7 @@ SMCtx :: SMCtx(const int iSMID, void * pCtx) : m_iSMID(iSMID), m_pCtx(pCtx)
 {
 }
 
-SMCtx :: SMCtx() : m_iSMID(0), m_pCtx(nullptr)
+SMCtx :: SMCtx() : m_iSMID(0), m_pCtx(nullptr),Svr(nullptr)
 {
 }
 

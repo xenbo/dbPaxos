@@ -310,7 +310,7 @@ void Acceptor :: OnAccept(const PaxosMsg & oPaxosMsg)
 
         m_oAcceptorState.SetPromiseBallot(oBallot);
         m_oAcceptorState.SetAcceptedBallot(oBallot);
-        m_oAcceptorState.SetAcceptedValue(oPaxosMsg.value());
+        m_oAcceptorState.SetAcceptedValue(oPaxosMsg .value());
         
         int ret = m_oAcceptorState.Persist(GetInstanceID(), GetLastChecksum());
         if (ret != 0)

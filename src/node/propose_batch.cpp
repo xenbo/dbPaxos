@@ -198,8 +198,7 @@ void ProposeBatch :: Run()
         oLock.lock();
 
         int iPassTime = oTimeStat.Point();
-        int iNeedSleepTime = iPassTime < m_iBatchDelayTimeMs ?
-            m_iBatchDelayTimeMs - iPassTime : 0;
+        int iNeedSleepTime = iPassTime < m_iBatchDelayTimeMs ?m_iBatchDelayTimeMs - iPassTime : 0;
 
         if (NeedBatch())
         {

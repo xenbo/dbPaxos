@@ -26,37 +26,38 @@ See the AUTHORS file for names of contributors.
 #include <string>
 #include <vector>
 
-namespace phxpaxos_test
-{
+namespace phxpaxos_test {
 
-class TestServer
-{
-public:
-    TestServer(const phxpaxos::NodeInfo & oMyNode, const phxpaxos::NodeInfoList & vecNodeList);
-    ~TestServer();
+    class TestServer {
+    public:
+        TestServer(const phxpaxos::NodeInfo &oMyNode, const phxpaxos::NodeInfoList &vecNodeList);
 
-    int RunPaxos();
+        static void OnMasterChange(const int iGroupIdx, const  phxpaxos::NodeInfo &oNewMaster, const uint64_t llVersion);
 
-    int Write(const std::string & sTestValue, uint64_t & llInstanceID);
+        ~TestServer();
 
-    int BatchWrite(const std::string & sTestValue, uint64_t & llInstanceID, uint32_t & iBatchIndex);
+        int RunPaxos();
 
-    int Ready();
+        int Write(const std::string &sTestValue, uint64_t &llInstanceID);
 
-    TestSM * GetSM();
+        int BatchWrite(const std::string &sTestValue, uint64_t &llInstanceID, uint32_t &iBatchIndex);
 
-private:
-    int MakeLogStoragePath(std::string & sLogStoragePath);
+        int Ready();
 
-private:
-    phxpaxos::NodeInfo m_oMyNode;
-    phxpaxos::NodeInfoList m_vecNodeList;
+        TestSM *GetSM();
 
-    TestSM m_oTestSM;
+    private:
+        int MakeLogStoragePath(std::string &sLogStoragePath);
 
-    phxpaxos::Node * m_poPaxosNode;
-};
-    
+    private:
+        phxpaxos::NodeInfo m_oMyNode;
+        phxpaxos::NodeInfoList m_vecNodeList;
+
+        TestSM m_oTestSM;
+
+        phxpaxos::Node *m_poPaxosNode;
+    };
+
 }
 
 

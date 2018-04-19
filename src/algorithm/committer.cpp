@@ -50,6 +50,7 @@ int Committer :: NewValueGetID(const std::string & sValue, uint64_t & llInstance
 
 int Committer :: NewValueGetID(const std::string & sValue, uint64_t & llInstanceID, SMCtx * poSMCtx)
 {
+
     BP->GetCommiterBP()->NewValue();
 
     int iRetryCount = 3;
@@ -114,7 +115,6 @@ int Committer :: NewValueGetIDNoRetry(const std::string & sValue, uint64_t & llI
         if (iLeftTimeoutMs < 200)
         {
             PLGErr("Get lock ok, but lockusetime %dms too long, lefttimeout %dms", iLockUseTimeMs, iLeftTimeoutMs);
-
             BP->GetCommiterBP()->NewValueGetLockTimeout();
 
             m_oWaitLock.UnLock();
@@ -123,7 +123,6 @@ int Committer :: NewValueGetIDNoRetry(const std::string & sValue, uint64_t & llI
     }
 
     PLGImp("GetLock ok, use time %dms", iLockUseTimeMs);
-    
     BP->GetCommiterBP()->NewValueGetLockOK(iLockUseTimeMs);
 
     //pack smid to value

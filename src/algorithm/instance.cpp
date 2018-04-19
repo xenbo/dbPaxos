@@ -644,7 +644,6 @@ int Instance :: ReceiveMsgForAcceptor(const PaxosMsg & oPaxosMsg, const bool bIs
                 //    (if < seen latestinstanceid, proposer don't need reply with this instanceid anymore.)
                 //4. msg.instanceid close to nowinstanceid.
                 m_oIOLoop.AddRetryPaxosMsg(oPaxosMsg);
-                
                 BP->GetInstanceBP()->OnReceivePaxosAcceptorMsgAddRetry();
 
                 //PLGErr("InstanceID not same, get in to retry logic");
@@ -697,6 +696,7 @@ int Instance :: ReceiveMsgForLearner(const PaxosMsg & oPaxosMsg)
 
         SMCtx * poSMCtx = nullptr;
         bool bIsMyCommit = m_oCommitCtx.IsMyCommit(m_oLearner.GetInstanceID(), m_oLearner.GetLearnValue(), poSMCtx);
+
 
         if (!bIsMyCommit)
         {
@@ -790,7 +790,7 @@ void Instance :: OnTimeout(const uint32_t iTimerID, const int iType)
     {
         m_oLearner.AskforLearn_Noop();
     }
-    else if (iType == Timer_Instance_Commit_Timeout)
+    else if (iType == Timer_Instance_Commit_Timeout)//Timer_Instance_Commit_Timeout
     {
         OnNewValueCommitTimeout();
     }

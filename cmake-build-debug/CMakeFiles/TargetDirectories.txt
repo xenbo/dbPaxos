@@ -1,0 +1,4 @@
+/home/dongbo/CLionProjects/paxos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dongbo/CLionProjects/paxos/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dongbo/CLionProjects/paxos/cmake-build-debug/CMakeFiles/paxos.dir
+/home/dongbo/CLionProjects/paxos/cmake-build-debug/CMakeFiles/dbphxpaxos.dir

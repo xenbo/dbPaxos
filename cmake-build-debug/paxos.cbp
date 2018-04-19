@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="paxos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="paxos">
+				<Option output="/home/dongbo/CLionProjects/paxos/cmake-build-debug/paxos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include/phxpaxos"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/algorithm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/config"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/node"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/utils"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/logstorage"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/comm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/sm-base"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/tools"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/checkpoint"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate/tcp"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/master"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 paxos"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="paxos/fast">
+				<Option output="/home/dongbo/CLionProjects/paxos/cmake-build-debug/paxos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include/phxpaxos"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/algorithm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/config"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/node"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/utils"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/logstorage"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/comm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/sm-base"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/tools"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/checkpoint"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate/tcp"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/master"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 paxos/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbphxpaxos">
+				<Option output="/home/dongbo/CLionProjects/paxos/cmake-build-debug/libdbphxpaxos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include/phxpaxos"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/algorithm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/config"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/node"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/utils"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/logstorage"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/comm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/sm-base"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/tools"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/checkpoint"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate/tcp"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/master"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 dbphxpaxos"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbphxpaxos/fast">
+				<Option output="/home/dongbo/CLionProjects/paxos/cmake-build-debug/libdbphxpaxos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dongbo/CLionProjects/paxos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/include/phxpaxos"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/algorithm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/config"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/node"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/utils"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/logstorage"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/comm"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/sm-base"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/tools"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/checkpoint"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/communicate/tcp"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/master"/>
+					<Add directory="/home/dongbo/CLionProjects/paxos/src/test"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/../../../../include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 dbphxpaxos/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/dongbo/CLionProjects/paxos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/acceptor.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/acceptor.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/base.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/base.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/checkpoint_receiver.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/checkpoint_receiver.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/checkpoint_sender.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/checkpoint_sender.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/commitctx.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/commitctx.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/committer.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/committer.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/instance.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/instance.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/ioloop.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/ioloop.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/learner.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/learner.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/learner_sender.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/learner_sender.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/msg_counter.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/msg_counter.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/proposer.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/algorithm/proposer.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/cleaner.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/cleaner.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/cp_mgr.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/cp_mgr.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/replayer.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/checkpoint/replayer.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/breakpoint.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/inside_options.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/inside_options.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/logger.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/logger.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/options.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/comm/paxos_msg.pb.cc">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/communicate.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/communicate.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/dfnetwork.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/dfnetwork.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/network.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/event_base.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/event_base.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/event_loop.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/event_loop.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/message_event.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/message_event.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/notify.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/notify.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp_acceptor.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp_acceptor.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp_client.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/tcp/tcp_client.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/udp.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/communicate/udp.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/config/config.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/config/config.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/config/system_v_sm.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/config/system_v_sm.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/db.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/db.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/log_store.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/log_store.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/paxos_log.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/paxos_log.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/system_variables_store.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/logstorage/system_variables_store.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_mgr.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_mgr.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_sm.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_sm.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_sm.pb.cc">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_variables_store.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/master/master_variables_store.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/group.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/group.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/node.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/pnode.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/pnode.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/propose_batch.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/node/propose_batch.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/sm-base/sm.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/sm-base/sm_base.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/sm-base/sm_base.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/test/test_main.cpp">
+			<Option target="paxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/test/test_server.cpp">
+			<Option target="paxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/test/test_server.h">
+			<Option target="paxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/test/test_sm.cpp">
+			<Option target="paxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/test/test_sm.h">
+			<Option target="paxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/tools/paxos_log_tools.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/tools/system_variables_tools.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/tools/vfile_fetch.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/bytes_buffer.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/bytes_buffer.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/concurrent.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/concurrent.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/crc32.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/crc32.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/notifier_pool.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/notifier_pool.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/serial_lock.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/serial_lock.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/socket.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/socket.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/timer.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/timer.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/util.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/util.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/wait_lock.cpp">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/src/utils/wait_lock.h">
+			<Option target="dbphxpaxos"/>
+		</Unit>
+		<Unit filename="/home/dongbo/CLionProjects/paxos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

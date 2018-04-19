@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/paxos.dir/src/test/test_main.cpp.o CMakeFiles/paxos.dir/src/test/test_server.cpp.o CMakeFiles/paxos.dir/src/test/test_sm.cpp.o  -o paxos  -L/usr/local/lib64 -Wl,-rpath,/usr/local/lib64 libdbphxpaxos.a -lleveldb -lprotobuf -lpthread 
